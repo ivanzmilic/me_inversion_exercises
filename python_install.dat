@@ -1,0 +1,46 @@
+Python installation notes for 3rd DKIST workshop
+
+Most of the exercises will do during the school will use python programming language. Python is a high level, interpretative language that is getting more and more popularity in science in general and solar physics in particular. 
+
+Python relies on the so called packages which give it a lot of additional functionality. You can run python in the terminal, command by command, you can make scripts, or, mostly for educational and testing purposes, you can make so called the so called jupyter notebooks where the code and the results are output in your internet browser, line under line. This enables us to easily follow the flow of the code, but can sometimes be cumbersome to debug.
+
+If you are a Linux or MacOS user, you should have python installed. The most current version is python 3, namely 3.6 or 3.7, both are fine for what we want to do. 
+
+There are numerous ways you can install additional packages. Perhaps the most popular one is pip, to install it, on ubuntu, run: 
+
+sudo apt install python-pip
+
+Then you can install packages using pip install name_of_the_package
+
+The packages we are going to need are: 
+
+- numpy
+- scipy
+- matplotlib
+- astropy
+
+And then, a specific package, developed by Jaime de la Cruz Rodriguez (University of Stockholm), that allows us to synthesize spectra in M-E approximation. To install it, do the following: 
+
+git clone https://github.com/jaimedelacruz/pyMilne
+
+This will create a folder named pyMilne. Before installing it, we need eigen and fftw libraries for our os, to install eigen you can do: 
+
+sudo apt install libeigen3-dev
+
+It's easy as that! 
+
+fftw3 should also work after doing:
+
+sudo apt-get install -y fftw3
+
+After this, enter pyMilne directory and do: 
+
+python3 setup.py build_ext --inplace
+
+Finally, to be able to use all the packages from anywhere, open 
+
+~/.bashrc file in your favorite text editor and add the folder where you cloned Jaime's code to PYTHONPATH, for example, in my case I had to do it like: 
+
+export PYTHONPATH=/home/milic/codes/pyMilne
+
+Then you can pop up example.py, or my jupyter notebook and try out some things! 
