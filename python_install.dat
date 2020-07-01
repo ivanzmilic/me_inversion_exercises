@@ -6,7 +6,7 @@ Python relies on the so called packages which give it a lot of additional functi
 
 If you are a Linux or MacOS user, you should have python installed. The most current version is python 3, namely 3.6 or 3.7, both are fine for what we want to do. 
 
-There are numerous ways you can install additional packages. Perhaps the most popular one is pip, to install it, on ubuntu, run: 
+There are numerous ways you can install additional packages. Perhaps the most popular one is pip, to install it, on Ubuntu, run: 
 
 sudo apt install python-pip
 
