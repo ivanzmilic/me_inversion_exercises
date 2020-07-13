@@ -63,4 +63,12 @@ conda create -name pymilne
 conda activate pymilne 
 conda install fftw gxx_linux-64 eigen ipython matplotlib numpy cython scipy astropy
 
+Finally, to be able to use all the packages from anywhere, open 
+
+~/.bashrc file in your favorite text editor and add the folder where you cloned Jaime's code to PYTHONPATH, for example, in my case I had to do it like: 
+
+export PYTHONPATH=/home/milic/codes/pyMilne
+
+Then you can pop up example.py, or my jupyter notebook and try out some things! 
+
 And you are ready to go! 
