@@ -4,7 +4,7 @@ Most of the exercises will do during the school will use python programming lang
 
 Python relies on the so called packages which give it a lot of additional functionality. You can run python in the terminal, command by command, you can make scripts, or, mostly for educational and testing purposes, you can make so called the so called jupyter notebooks where the code and the results are output in your internet browser, line under line. This enables us to easily follow the flow of the code, but can sometimes be cumbersome to debug.
 
-If you are a Linux or MacOS user, you should have python installed. The most current version is python 3, namely 3.6 or 3.7, both are fine for what we want to do. 
+If you are a Linux or MacOS user, you should have python installed. The most current version is python 3, namely 3.6 or 3.7, perhaps even 3.8, all are fine for what we want to do. 
 
 There are numerous ways you can install additional packages. Perhaps the most popular one is pip, to install it, on Ubuntu, run: 
 
@@ -20,6 +20,8 @@ The packages we are going to need are:
 - astropy
 
 And then, a specific package, developed by Jaime de la Cruz Rodriguez (University of Stockholm), that allows us to synthesize spectra in M-E approximation. To install it, do the following: 
+
+(For this you will need to install famous git)
 
 git clone https://github.com/jaimedelacruz/pyMilne
 
@@ -44,3 +46,21 @@ Finally, to be able to use all the packages from anywhere, open
 export PYTHONPATH=/home/milic/codes/pyMilne
 
 Then you can pop up example.py, or my jupyter notebook and try out some things! 
+
+Now, if you are MacOS user, the story might be a bit different! 
+
+The best idea is to install conda. conda is an "enviroment manager":
+
+https://docs.conda.io/en/latest/
+
+You can install the so called miniconda and then follow the notes for the installation of the pyMilne package found at: 
+
+https://github.com/jaimedelacruz/pyMilne
+
+For your convenience, here I am copy/pasting it: 
+
+conda create -name pymilne 
+conda activate pymilne 
+conda install fftw gxx_linux-64 eigen ipython matplotlib numpy cython scipy astropy
+
+And you are ready to go! 
