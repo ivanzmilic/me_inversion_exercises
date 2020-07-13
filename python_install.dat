@@ -35,6 +35,10 @@ fftw3 should also work after doing:
 
 sudo apt-get install -y fftw3
 
+or , much more likely:
+
+sudo apt-get install fftw-dev 
+
 After this, enter pyMilne directory and do: 
 
 python3 setup.py build_ext --inplace
