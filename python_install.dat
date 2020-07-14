@@ -35,9 +35,15 @@ fftw3 should also work after doing:
 
 sudo apt-get install -y fftw3
 
-or , much more likely:
+or , possibly, you might have to install 
 
 sudo apt-get install fftw-dev 
+
+or
+
+sudo apt-get install fftw3-dev (this one is the most likely one not to give any problems)
+
+Alternatively, you can also follow conda instructions that are suggested to MacOS users (see below).
 
 After this, enter pyMilne directory and do: 
 
