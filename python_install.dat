@@ -71,7 +71,7 @@ For your convenience, here I am copy/pasting it:
 
 conda create --name pymilne 
 conda activate pymilne 
-conda install fftw gxx_linux-64 eigen ipython matplotlib numpy cython scipy astropy
+conda install fftw clangxx_osx-64 eigen ipython matplotlib numpy cython scipy astropy llvm-openmp
 
 And then the installation:
 
