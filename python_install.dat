@@ -69,9 +69,13 @@ https://github.com/jaimedelacruz/pyMilne
 
 For your convenience, here I am copy/pasting it: 
 
-conda create -name pymilne 
+conda create --name pymilne 
 conda activate pymilne 
 conda install fftw gxx_linux-64 eigen ipython matplotlib numpy cython scipy astropy
+
+And then the installation:
+
+python3 setup.py build_ext --inplace
 
 Finally, to be able to use all the packages from anywhere, open 
 
