@@ -82,3 +82,13 @@ export PYTHONPATH=/home/milic/codes/pyMilne
 Then you can pop up example.py, or my jupyter notebook and try out some things! 
 
 And you are ready to go! 
+
+Known problems: 
+
+1) You might encounter problem with multiple versions of the same library. You can 
+   try adding: 
+   
+   import os 
+   os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
+   To try and fix that
