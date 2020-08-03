@@ -96,3 +96,8 @@ Known problems:
    os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
    To try and fix that
+
+2) Sometimes latex is acting weirdly, try: 
+
+	import matplotlib as mpl
+	mpl.rcParams['text.usetex'] = False
